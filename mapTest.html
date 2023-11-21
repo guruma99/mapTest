@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="kakaoMap api로 공공데이터포탈 데이터사용해 표현하기">
+  <meta name="keywords" content="kakaoMap,공공데이터포탈">
+  <meta name="author" content="Haemin Kang">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mapTest</title>
+  <link rel="stylesheet" href="/mapTest.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script type="text/javascript"
+    src="//dapi.kakao.com/v2/maps/sdk.js?appkey=04aea75b3d77e8dc37d083dd6b9d6eb4&libraries=services"></script>
+  <script src="/mapTest.js"></script>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1>mapTest</h1>
+    </div>
+  </header>
+  <main>
+    <div id="map"></div>
+    <div class="textBox">
+      <p id="result"></p>
+    </div>
+
+    <div class="btnWrap">
+      <button type="button" id="YUSEONG_POPULATION">인구수 보기</button>
+      <button type="button" id="bicycle">타슈 위치보기</button>
+      <button type="button" id="ev">전기차충전소 위치보기</button>
+    </div>
+  </main>
+</body>
+
+</html>
